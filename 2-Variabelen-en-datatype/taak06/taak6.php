@@ -2,10 +2,10 @@
 <body>
 
 <?php
-$x = " true ";
+$nummer = 3;
 $leeftijd = " 17 jaar ";
-echo "dardan is" . $leeftijd . "oud";
-echo " de melk is " . $x ;
+echo gettype($nummer). "<br>";
+echo gettype($leeftijd);
 ?>
 
 </html>
