@@ -2,9 +2,15 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
+    <?php include 'includes/functions.php';?>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Title</title>
+
+    <div class="menu">
+<?php include 'documents/menu.php';?>
+</div>
   </head>
     <form action="producten.php" method="get"><!-- dit laten staan! -->
 
@@ -33,9 +39,9 @@
     <p>Vul je leeftijd in voor korting</p>
     <p><label>leeftijd: </label><input type="text" name="leeftijd"></p><!-- dit laten staan! -->
     <p><button type="submit" name="submit">Bereken totaal</button></p><!-- dit laten staan! -->
-    <p>voor <?php getAmount(); ?> x het product: <?php getProductNr(); ?> betaal je:</p>
-    <p>je bent <?php getAge(); ?> je korting is: </p>
-
+    <p>voor <?php getAmount(); ?> x het product: <?php getProductNr(); ?> betaal je:<?php totaal(); ?></p>
+    <p>je bent <?php getAge(); ?> je korting is:<?php korting()?> </p>
+  
     </form><!-- dit laten staan! -->
   </body>
 </html>
